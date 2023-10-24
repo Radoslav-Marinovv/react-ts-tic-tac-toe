@@ -69,8 +69,8 @@ const TicTacToe = () => {
             </button>
           ))}
         </div>
-
-        <div className='p-4 self-center'>
+        <div className='pt-4 self-center text-indigo-300'>{`Current player: ${!playerTurn ? PLAYER_1 : PLAYER_2}`}</div>
+        <div className='p-2 self-center'>
           <button type='button' onClick={handleReset}>Restart</button>
         </div>
       </div>
@@ -82,7 +82,6 @@ const TicTacToe = () => {
           </div>
         )}
       </div >
-
     </>
   )
 }
